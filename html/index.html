@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="nui://game/ui/jquery.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+    <title>MJ HUD</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header">
+            <span id="header__id" style="font-size: 0.8vw;argin-top: 0.15vw;">0</span>
+            <span id="header__clock">00:00</span>
+        </div>
+        <p id="header__svname">LostAngel</p>
+
+        <div class="middleside">
+            <img src="https://cdn.discordapp.com/attachments/853263612532752384/905120648379129926/Rectangle_4089_1.png" id="profile_img">
+            <div class="selfinfo">
+                <span id="player_name">Dar Hale Reload</span>
+                <a id="player_cash">
+                    <!-- <img src="./assets/imgs/money.svg"> -->
+                    <span id="cash">$180,000</span>
+                </a>
+            </div>
+            <!-- <div class="ping">
+                <img src="./assets/imgs/wi-fi.svg">
+                <span id="ping">20</span>
+            </div> -->
+        </div>
+        <div class="jobgangbox">
+            <div class="jginfo" id="job">
+                <img src="./assets/imgs/jobs/nojob.png">
+                <div class="info__name">
+                    <span id="jobname">nojob</span>
+                </div>
+                <div class="info__name">
+                    <span id="jobgrade">nojob</span>
+                </div>
+            </div>
+            <div class="jginfo" id="gang">
+                <img src="./assets/imgs/gangs/gang.png">
+                <div class="info__name">
+                    <span id="gangname">Mafia</span>
+                </div>
+                <div class="info__name">
+                    <span id="ganggrade">Mafia</span>
+                </div>
+            </div>
+        </div>
+        <div class="progressinfo">
+            <div class="progressbar" id="health">
+                <div class="progressbar__img"><img src="./assets/imgs/heart.svg"></div>
+                <div class="progressbar__prog"></div>
+                <div class="progressbar__info">100/100</div>
+            </div>
+            <div class="progressbar" id="armor">
+                <div class="progressbar__img"><img src="./assets/imgs/silver-shield.svg"></div>
+                <div class="progressbar__prog"></div>
+                <div class="progressbar__info">100/100</div>
+            </div>
+            <div class="progressbar" id="hunger">
+                <div class="progressbar__img"><img src="./assets/imgs/burger.svg"></div>
+                <div class="progressbar__prog"></div>
+                <div class="progressbar__info">100/100</div>
+            </div>
+            <div class="progressbar" id="thirst">
+                <div class="progressbar__img"><img src="./assets/imgs/water-bottle.svg"></div>
+                <div class="progressbar__prog"></div>
+                <div class="progressbar__info">100/100</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

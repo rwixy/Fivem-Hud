@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --color-primary: rgba(39, 39, 39, 0.904);
+    --color-borders: #fcfdff;
+    --color-texts: rgb(255, 255, 255);
+    --color-health: #B60000;
+    --color-health-border: #f7aaaa;
+    --color-armor: #767676;
+    --color-armor-border: #C6C6C6;
+    --color-hunger: #FF5C00;
+    --color-hunger-border: #FF9100;
+    --color-thirst: #0028D1;
+    --color-thirst-border: #ABD7FF;
+    --size-border-radius: 0.5vw;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2vw;
+    color: #fff;
+}
+
+#main {
+    width: 14vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.header {
+    width: 50%;
+    height: 2vw;
+    border-radius: var(--size-border-radius);
+    background-color: var(--color-primary);
+    border: 0.15vw solid var(--color-borders);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 0.5vw;
+}
+
+#header__svname {
+    font-size: 1.0vw;
+    margin-top: -2.1vw;
+    margin-left: 8vw;
+    letter-spacing: 0.05vw;
+    color: #f3f3f3;
+}
+
+#header__clock {
+    font-size: 0.8vw;
+    margin-top: 0.15vw;
+}
+
+.middleside {
+    height: 5vw;
+    width: 100%;
+    border-radius: var(--size-border-radius);
+    background-color: var(--color-primary);
+    border: 0.15vw solid var(--color-borders);
+    display: flex;
+    align-items: center;
+    padding: 0 0.5vw;
+    gap: 0.5vw;
+}
+
+#profile_img {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.selfinfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.8vw 0;
+    gap: 1vw;
+    font-size: 0.8vw;
+}
+
+#player_cash img {
+    vertical-align: middle;
+    width: 1.2vw;
+    height: auto;
+}
+
+.ping {
+    font-size: 0.8vw;
+    position: absolute;
+    right: 3vw;
+}
+
+.ping img {
+    vertical-align: middle;
+    margin-top: -0.4vw;
+    width: 2vw;
+}
+
+.jobgangbox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+    color: var(--color-texts);
+}
+
+.jginfo {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+.jginfo img {
+    width: 2vw;
+    height: auto;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+    border: 0.1vw solid var(--color-borders);
+}
+
+.info__name {
+    width: 7vw;
+    height: 1.8vw;
+    background-color: var(--color-primary);
+    border-radius: var(--size-border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.15vw solid var(--color-borders);
+    font-size: 0.6vw;
+    padding-top: 0.3vw;
+}
+
+.progressinfo {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.2vw;
+    row-gap: 1.5vw;
+}
+
+.progressbar {
+    position: relative;
+    width: 5.5vw;
+    left: 20px;
+    height: 1vw;
+    border-radius: 0.5vw;
+}
+
+.progressbar__img {
+    position: absolute;
+    border-radius: 100%;
+    border: 0.2vw solid var(--color-health-border);
+    background-color: var(--color-health);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    left: -1vw;
+    top: -0.15vw;
+}
+
+.progressbar__img img {
+    width: 1vw;
+}
+
+.progressbar__prog {
+    height: 0.65vw;
+    border-radius: var(--size-border-radius);
+    margin-top: -0.1vw;
+    margin-right: -0.15vw;
+    background-color: var(--color-health);
+}
+
+.progressbar__info {
+    position: absolute;
+    right: 1vw;
+    font-size: 0.5vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5vw;
+    height: 1vw;
+    background-color: var(--color-health);
+    border-radius: 0vw 0vw 0.5vw 0.5vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#armor .progressbar__img {
+    border: 0.2vw solid var(--color-armor-border);
+    background-color: var(--color-armor);
+}
+
+#health .progressbar__img {
+    border: 0.2vw solid var(--color-health-border);
+    background-color: var(--color-health);
+}
+
+#armor .progressbar__info,
+#armor .progressbar__prog {
+    background-color: var(--color-armor);
+}
+
+#armor img {
+    width: 1vw;
+}
+
+#hunger .progressbar__img {
+    border: 0.2vw solid var(--color-hunger-border);
+    background-color: var(--color-hunger);
+}
+
+#hunger .progressbar__info,
+#hunger .progressbar__prog {
+    background-color: var(--color-hunger);
+}
+
+#thirst .progressbar__img {
+    border: 0.2vw solid var(--color-thirst-border);
+    background-color: var(--color-thirst);
+}
+
+#thirst .progressbar__info,
+#thirst .progressbar__prog {
+    background-color: var(--color-thirst);
+}
