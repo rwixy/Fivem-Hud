@@ -1,4 +1,4 @@
-ESX, PlayerData = nil, {}
+PlayerData = nil, {}
 local PlayerInfoLoaded = false
 local timer = 0
 local isPaused, ToggleHUD = true, true
@@ -61,13 +61,6 @@ function SetStatus(data)
 	})
 end
 
-
-CreateThread(function()
-    while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Wait(1)
-	end
-end)
 
 function Babatj()
 ESX.TriggerServerCallback('Babat:avatar', function(cs)
