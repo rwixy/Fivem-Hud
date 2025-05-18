@@ -1,6 +1,3 @@
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
 RegisterServerEvent("saveHungerThirst")
 AddEventHandler("saveHungerThirst", function(hunger, thirst)
   local _source = source
